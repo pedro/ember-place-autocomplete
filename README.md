@@ -28,7 +28,14 @@ In order to use this addon you just have to use the component in your templates.
   types='(cities)' //You don't have to pass this value, default value is 'geocode'
   restrictions= restrictionsObjectFromController // You can pass and object with restriction options.
 }}
+```
 
+You can supply your own Google API key in `config/environment.js`:
+
+```js
+  ENV['place-autocomplete'] = {
+    key: 'AIZ...'
+  };
 ```
 
 ### Options:
